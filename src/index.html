@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="h-[2000px] bg-heroGradient">
+      <header
+        class="mx-auto flex max-w-[1336px] justify-between pt-[35px] lg:px-5 sm:pt-5"
+      >
+        <!-- logo -->
+        <a href="#">
+          <img src="./assets/logo/logo.png" alt="logo" />
+        </a>
+
+        <!-- menu desktop -->
+        <nav class="sm:hidden">
+          <ul class="flex items-center gap-[30px]">
+            <li>
+              <a class="menu-link" href="#">Courses</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- mobile menu -->
+        <nav
+          id="mobile-menu"
+          class="fixed left-0 right-0 top-0 bottom-0 hidden items-center justify-center bg-heroGradient"
+        >
+          <ul class="flex flex-col items-center gap-10">
+            <li><a class="text-xl text-white" href="#">Courses</a></li>
+            <li><a class="text-xl text-white" href="#">Pricing</a></li>
+            <li><a class="text-xl text-white" href="#">About Us</a></li>
+            <li><a class="text-xl text-white" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- actions -->
+        <div class="flex items-center gap-[30px] md:hidden">
+          <a class="flex items-center gap-[8px]" href="#">
+            <svg
+              width="17"
+              height="21"
+              viewBox="0 0 17 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.3333 5.70833C12.3333 7.82542 10.6171 9.54167 8.49999 9.54167C6.3829 9.54167 4.66666 7.82542 4.66666 5.70833C4.66666 3.59124 6.3829 1.875 8.49999 1.875C10.6171 1.875 12.3333 3.59124 12.3333 5.70833Z"
+                stroke="white"
+                stroke-width="1.91667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.49999 12.4167C4.79508 12.4167 1.79166 15.4201 1.79166 19.125H15.2083C15.2083 15.4201 12.2049 12.4167 8.49999 12.4167Z"
+                stroke="white"
+                stroke-width="1.91667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="text-[15px] font-medium leading-[22px] text-white"
+              >Account</span
+            >
+          </a>
+          <a class="flex items-center gap-[8px]" href="#">
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.03728 3.79167H19.125L17.2083 10.5H6.06935M18.1667 14.3333H6.66667L4.75 1.875H1.875M7.625 18.1667C7.625 18.6959 7.19594 19.125 6.66667 19.125C6.13739 19.125 5.70833 18.6959 5.70833 18.1667C5.70833 17.6374 6.13739 17.2083 6.66667 17.2083C7.19594 17.2083 7.625 17.6374 7.625 18.1667ZM18.1667 18.1667C18.1667 18.6959 17.7376 19.125 17.2083 19.125C16.6791 19.125 16.25 18.6959 16.25 18.1667C16.25 17.6374 16.6791 17.2083 17.2083 17.2083C17.7376 17.2083 18.1667 17.6374 18.1667 18.1667Z"
+                stroke="white"
+                stroke-width="1.84"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="text-[15px] font-medium leading-[22px] text-white"
+              >Cart</span
+            >
+          </a>
+        </div>
+
+        <!-- burger menu -->
+        <button
+          id="burger"
+          class="group relative hidden h-[20px] w-[30px] sm:block"
+        >
+          <span
+            class="absolute top-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+          ></span>
+          <span
+            class="transform-opacity absolute top-1/2 left-0 h-[1px] w-full bg-white group-[.active]:opacity-0"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 h-[1px] w-full bg-white group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45"
+          ></span>
+        </button>
+      </header>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
