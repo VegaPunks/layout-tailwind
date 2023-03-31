@@ -12,12 +12,11 @@
     <link href="./css/output.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="h-[2000px] bg-heroGradient">
-      <header
-        class="mx-auto flex max-w-[1336px] justify-between pt-[35px] lg:px-5 sm:pt-5"
-      >
+    <section class="bg-heroGradient rounded-br-[200px] overflow-hidden">
+      <!-- header -->
+      <header class="mx-auto flex max-w-[1336px] justify-between pt-[35px] lg:px-5 sm:pt-5">
         <!-- logo -->
-        <a href="#">
+        <a class="z-[1]" href="#">
           <img src="./assets/logo/logo.png" alt="logo" />
         </a>
 
@@ -119,6 +118,36 @@
           ></span>
         </button>
       </header>
+
+      <!-- section hero -->
+      <section>
+        <div class="mx-auto grid max-w-[1250px] grid-cols-2 pt-[126px] lg:px-5 lg:pt-20 pb-[100px] sm:grid-cols-1 sm:pt-16 sm:gap-5">
+          <div>
+            <h1 class="text-[60px] font-bold leading-normal text-white lg:text-5xl lg:leading-normal md:text-4xl md:leading-normal sm:text-3xl sm:leading-xl">
+              Upgrade YOUR skills for better future
+            </h1>
+            <p class="mt-[20px] text-[22px] leading-[33px] text-white lg:text-xl md:text-lg sm:text-base">
+              Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Iusto
+              explicabo doloribus voluptatem vel.
+            </p>
+            <div class="mt-[31px] flex items-center gap-5 sm:grid sm:grid-cols-2 sm:mt-4 xs:grid-cols-1 xs:gap-4">
+              <a
+                class="sm:flex sm:justify-center sm:w-full rounded-xl bg-[#FF08C7] py-[10px] px-[24px] font-semibold text-white transition-colors hover:bg-white hover:text-black"
+                href="#"
+                >Check Courses</a
+              >
+              <a
+                class="sm:flex sm:justify-center sm:w-full rounded-xl border border-white bg-transparent py-[9px] px-[23px] font-medium text-white transition-colors hover:bg-white hover:text-black"
+                href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div>
+            <img class="sm:max-w-full sm:w-full sm:h-auto" src="./assets/hero.png" alt="hero" />
+          </div>
+        </div>
+      </section>
     </section>
     <script src="./js/main.js"></script>
   </body>
