@@ -18,6 +18,19 @@ module.exports = {
       colors: {
         blueviolet: "#5027B5",
         lightgray: "#666768"
+      },
+      keyframes: {
+        "fade-in": {
+          from: {
+            opactity: 0
+          },
+          to: {
+            opactity: 1
+          }
+        }
+      },
+      animation: {
+        fadeIn: "2s fade-in ease-in-out"
       }
     },
   },
