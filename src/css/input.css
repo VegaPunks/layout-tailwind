@@ -14,7 +14,25 @@
 		@apply text-[44px] font-semibold leading-normal tracking-[-0.002em] md:text-4xl sm:text-3xl mb-[30px];
 	}
 	.tab-trigger.active {
-		@apply text-blueviolet border-b-blueviolet border-b pb-3
+		@apply text-blueviolet border-b-blueviolet border-b pb-3;
+	}
+	.section-text {
+		@apply text-[16px] text-[#666768] tracking-[-0.002em];
+	}
+	.grid-title {
+		@apply text-xl leading-normal font-medium mb-[15px];
+	}
+	.grid-desc {
+		@apply text-[#666768] tracking-[-0.002em] leading-[24px] text-[16px] text-justify;
+	}
+	.user-title {
+		@apply text-[44px]
+	}
+	.accordion-item.active > .accordion-content {
+		@apply block;
+	}
+	.accordion-item.active .accordion-img {
+		@apply rotate-180;
 	}
 	/*.tab-content {
 		@apply 

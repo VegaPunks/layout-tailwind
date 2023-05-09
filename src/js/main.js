@@ -44,3 +44,24 @@ function toggleTabs(tabsTriggerClass, tabsContentClass) {
 }
 
 toggleTabs(".tab-trigger", ".tab-content")
+
+
+const accordion = () => {
+	const items = document.querySelectorAll(".accordion-trigger")
+	const item = document.querySelectorAll(".accordion-item")
+	console.log(items)
+	items.forEach((el, i) => {
+		el.addEventListener("click", () => {
+			const parent = el.parentNode
+			console.log(parent)
+			if(parent.classList.contains("active")) {
+				parent.classList.remove("active")
+			} else {
+				item.forEach(e => e.classList.remove("active"))
+				parent.classList.add("active")
+			}
+		})
+	})
+}
+
+accordion()
